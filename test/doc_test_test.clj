@@ -1,10 +1,8 @@
-(ns
-    doc-test-tests
+(ns doc-test-test
   (:use clojure.test)
-  (:use doc-test))
+  (:use doc-test.core))
 
-
-(run-tests 'doc-test)
+(run-tests 'doc-test.core)
 
 (defn adder
   "A simple function to test the doctest macro with.
@@ -17,6 +15,4 @@
   (fn [n2] (+ n1 n2)))
 
 (doc-test adder)
-;(doc-test find-expression-strings)
-;(doc-test to-is)
 (run-tests)

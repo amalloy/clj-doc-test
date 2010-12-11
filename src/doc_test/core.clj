@@ -1,7 +1,4 @@
-(ns
-    #^{:author "Andy Kish"
-       :doc "Verifies correctness of example expressions in doc-strings."}
-  doc-test
+(ns doc-test.core
   (:use clojure.test)
   (:use [clojure.contrib.str-utils :only (re-split)]))
 
